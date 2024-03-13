@@ -105,6 +105,7 @@ div.csl-indent {
   <ul>
   <li><a href="#basic-information" id="toc-basic-information" class="nav-link active" data-scroll-target="#basic-information">Basic information</a></li>
   <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions">Questions</a></li>
   <li><a href="#citation" id="toc-citation" class="nav-link" data-scroll-target="#citation">Citation</a></li>
   </ul>
 </nav>
@@ -153,12 +154,8 @@ div.csl-indent {
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tibble</span>(<span class="at">Name =</span> <span class="fu">names</span>(params), </span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>         <span class="at">Value =</span> <span class="fu">c</span>(params)) <span class="sc">%&gt;%</span> </span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unnest</span>(<span class="at">cols =</span> <span class="fu">c</span>(Value)) <span class="sc">%&gt;%</span> </span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>   <span class="fu">mutate</span>(</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>     <span class="at">Value =</span> <span class="fu">case_when</span>(Name <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"date_of_issue"</span>) <span class="sc">~</span> <span class="fu">nice</span>(<span class="fu">as_date</span>(Value)),</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>                      <span class="cn">TRUE</span> <span class="sc">~</span> Value)</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>   ) <span class="sc">%&gt;%</span> </span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Name =</span> <span class="fu">str_replace_all</span>(Name, <span class="st">"_"</span>, <span class="st">" "</span>),</span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>         <span class="at">Name =</span> <span class="fu">str_to_sentence</span>(Name))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>   <span class="fu">mutate</span>(<span class="at">Name =</span> <span class="fu">str_replace_all</span>(Name, <span class="st">"_"</span>, <span class="st">" "</span>),</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>         <span class="at">Name =</span> <span class="fu">str_to_sentence</span>(Name))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 <section id="basic-information" class="level1">
@@ -189,7 +186,7 @@ div.csl-indent {
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Date of issue</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;">June 2023</td>
 </tr>
 </tbody>
 </table>
@@ -200,6 +197,36 @@ div.csl-indent {
 </section>
 <section id="summary" class="level1">
 <h1>Summary</h1>
+<p>In “Obtaining Comparable Measures of Agency Performance: An Application to U.S. Federal Agencies, 2002-2022”, George A. Krause and David E. Lewis develop a method for measuring Federal agency performance using a Bayesian structural equation measurement (BESM) model. Federal agencies have detailed and extensive performance management systems, but the outputs of these systems (the measurements of performance) are difficult to compare across agency. The method proposed by the authors creates a new kinds of agency performance metric that uses data from difference levels of agencies and related to different tasks to create an overall metric of performance for federal agencies. This is a draft paper and has not been published.</p>
+<p>In this paper, the authors begin by discussing the difficulty in comparing performance across agencies in Federal government. They identify five reasons that comparative performance measurement is difficult:</p>
+<ol type="1">
+<li><p>Tasks are hard to observe and, when compared against other agencies, the tasks are far removed from the mission of the agency</p></li>
+<li><p>Agencies have sub units that may have varied tasks and objectives</p></li>
+<li><p>Goals of agencies differ or are unclear</p></li>
+<li><p>Academics and practitioners evaluate performance differently</p></li>
+<li><p>Players disagree about what is good performance.</p></li>
+</ol>
+<p>The authors assume that latent agency performance exists and can be measured using observable indicators. To further define, the authors must account for differences between players (Democrats and Republicans) in what good performance is and disentangle tasks from performance. For the first, they define that an agencies good performance is defined by capably doing their job as defined by <em>legal requirements</em>. That is not by the preferences of political leaders. For the second, the authors make clear that contributors to performance and not measures of performance. We need to define something to measure performance independently.</p>
+<p>They propose that a latent agency performance can be measured using subjective and objects data for a variety of source, using a BESM. They start by aggregating measures of tasks from the sub-unit up to the agency. Further, they aggregate subjective evaluations of performance across different criteria to uncover the latent dimension of performance. The researchers use data on subjective assessments of agency performance from employees (FEVS) as well as objective measures, like number of employees winning awards or congressional investigations.</p>
+<p>They perform a two part process. First, the researchers use a Bayesian Exploratory Factor Analysis (BEFA) to evaluate the dimensional of the observed data. Second, they employed BESM to produce measures of latent agency performance. BEFA indicated two latent performance dimensions. The first, <em>management performance</em>, consisted of measures of operations core to the enactment of the agencies mission. The second, <em>outcome performance</em>, consisted on the outcomes related to the agency, but was a much noisier measure. The researchers preferred measure was management performance.</p>
+<p>The researchers found that the subjective measures of performance were highly correlated to management performance, with low p-values. Outcome performance, on the other hand, has measures that are very imprecisely associated with this dimension, except for the <em>GAO High Risk Program Count</em>.</p>
+<p>Some agencies are persistently high and low on the management performance measure. NSF, NASA, and the National Regulatory Commission performed highly. DHS, in particular, performed poorly as did HUD.</p>
+<p>The outcome performance measure generated by this process is a promising way to measure agency performance. It incorporates different data sources to produce a single metric of performance that is comparable across agencies. Furthermore, as new data becomes available it may be included to improve the measure.</p>
+</section>
+<section id="questions" class="level1">
+<h1>Questions</h1>
+<ol type="1">
+<li><p>Is it a problem that the management performance measure is driven by subjective performance measures?</p></li>
+<li><p>The agencies that perform low on the measure aren’t surprising. Is this because their goals are contentious? Hard to meet?</p></li>
+<li><p>Is there a threshold for poor performance? Below zero?</p></li>
+<li><p>Are these measures a way to judge administrations?</p></li>
+<li><p>Are the measures comparable through time?</p></li>
+<li><p>Is it possible to create these measures on an annual basis?</p></li>
+<li><p>Do the values have meaning? How might you communicate these results?</p></li>
+<li><p>What’s up with the huge variance of SBA?</p></li>
+<li><p>Is there a relationship between the clarity of an agencies’ mission and performance?</p></li>
+<li><p>Does incorporating new data as it becomes available make the measure less backwards compatible?</p></li>
+</ol>
 <p><span class="citation" data-cites="paper">Krause and Lewis (<a href="#ref-paper" role="doc-biblioref">June 2023</a>)</span></p>
 </section>
 <section id="citation" class="level1">
