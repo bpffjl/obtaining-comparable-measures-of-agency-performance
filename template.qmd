@@ -9,6 +9,7 @@ format:
     toc: true
     fig-width: 8
     fig-cap-location: top
+    self-contained: true
 editor: visual
 execute: 
   echo: false
@@ -57,7 +58,7 @@ params_tbl %>%
 
 # Summary
 
-In "Obtaining Comparable Measures of Agency Performance: An Application to U.S. Federal Agencies, 2002-2022", George A. Krause and David E. Lewis develop a method for measuring Federal agency performance using a Bayesian structural equation measurement (BESM) model. Federal agencies have detailed and extensive performance management systems, but the outputs of these systems (the measurements of performance) are difficult to compare across agency. The method proposed by the authors creates a new kinds of agency performance metric that uses data from difference levels of agencies and related to different tasks to create an overall metric of performance for federal agencies. This is a draft paper and has not been published.
+In "Obtaining Comparable Measures of Agency Performance: An Application to U.S. Federal Agencies, 2002-2022", George A. Krause and David E. Lewis develop a method for measuring Federal agency performance using a Bayesian structural equation measurement (BESM) model. Federal agencies have detailed and extensive performance management systems, but the outputs of these systems (the measurements of performance) are difficult to compare across agencies. The method proposed by the authors creates a new kinds of agency performance metric that uses data from difference levels of agencies and related to different tasks to create an overall metric of performance for federal agencies. This is a draft paper and has not been published.
 
 In this paper, the authors begin by discussing the difficulty in comparing performance across agencies in Federal government. They identify five reasons that comparative performance measurement is difficult:
 
@@ -71,15 +72,15 @@ In this paper, the authors begin by discussing the difficulty in comparing perfo
 
 5.  Players disagree about what is good performance.
 
-The authors assume that latent agency performance exists and can be measured using observable indicators. To further define, the authors must account for differences between players (Democrats and Republicans) in what good performance is and disentangle tasks from performance. For the first, they define that an agencies good performance is defined by capably doing their job as defined by *legal requirements*. That is not by the preferences of political leaders. For the second, the authors make clear that contributors to performance and not measures of performance. We need to define something to measure performance independently.
+The authors assume that latent agency performance exists and can be measured using observable indicators. To further define, the authors must account for differences between players (Democrats and Republicans) in what good performance is and disentangle tasks from performance. For the first, they state that an agency's good performance is capably doing their job as defined by *legal requirements*. That is not by the preferences of political leaders. For the second, the authors make clear that contributors to performance **are not** measures of performance. We need to define something to measure performance independently.
 
-They propose that a latent agency performance can be measured using subjective and objects data for a variety of source, using a BESM. They start by aggregating measures of tasks from the sub-unit up to the agency. Further, they aggregate subjective evaluations of performance across different criteria to uncover the latent dimension of performance. The researchers use data on subjective assessments of agency performance from employees (FEVS) as well as objective measures, like number of employees winning awards or congressional investigations.
+They propose that a latent agency performance can be measured using subjective and objective data from a variety of sources, using a BESM. They start by aggregating measures of tasks from the sub-unit up to the agency. Further, they aggregate subjective evaluations of performance across different criteria to uncover the latent dimension of performance. The researchers use data on subjective assessments of agency performance from employees (FEVS) as well as objective measures, like number of employees winning awards or congressional investigations.
 
-They perform a two part process. First, the researchers use a Bayesian Exploratory Factor Analysis (BEFA) to evaluate the dimensional of the observed data. Second, they employed BESM to produce measures of latent agency performance. BEFA indicated two latent performance dimensions. The first, *management performance*, consisted of measures of operations core to the enactment of the agencies mission. The second, *outcome performance*, consisted on the outcomes related to the agency, but was a much noisier measure. The researchers preferred measure was management performance.
+They perform a two part process. First, the researchers use a **Bayesian Exploratory Factor Analysis (BEFA)** to evaluate the dimensional of the observed data. Second, they employed BESM to produce measures of latent agency performance. BEFA indicated two latent performance dimensions. The first, ***management performance***, consisted of measures of operations core to the enactment of the agencies mission. The second, ***outcome performance***, consisted on the outcomes related to the agency, but was a much noisier measure. The researchers preferred measure is management performance.
 
 The researchers found that the subjective measures of performance were highly correlated to management performance, with low p-values. Outcome performance, on the other hand, has measures that are very imprecisely associated with this dimension, except for the *GAO High Risk Program Count*.
 
-Some agencies are persistently high and low on the management performance measure. NSF, NASA, and the National Regulatory Commission performed highly. DHS, in particular, performed poorly as did HUD.
+Some agencies are persistently high or low on the management performance measure. NSF, NASA, and the National Regulatory Commission performed highly. DHS, in particular, performed poorly, as did HUD.
 
 The outcome performance measure generated by this process is a promising way to measure agency performance. It incorporates different data sources to produce a single metric of performance that is comparable across agencies. Furthermore, as new data becomes available it may be included to improve the measure.
 
@@ -97,7 +98,7 @@ The outcome performance measure generated by this process is a promising way to 
 
 6.  Is it possible to create these measures on an annual basis?
 
-7.  Do the values have meaning? How might you communicate these results?
+7.  Do the perfomance measure have meaning by themselves? How might you communicate these results?
 
 8.  What's up with the huge variance of SBA?
 
